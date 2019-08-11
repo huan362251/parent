@@ -24,8 +24,8 @@ public class MessageController {
     private MessageService messageService;
 
     @PostMapping("/queryMessage.do")
-    @ApiOperation(value="测试用接口", notes="测试用接口" ,httpMethod="POST")
-    public void queryMessage(){
+    @ApiOperation(value = "测试用接口", notes = "测试用接口", httpMethod = "POST")
+    public void queryMessage() {
 //        System.out.printf("进入方法");
         messageService.queryMessage();
     }

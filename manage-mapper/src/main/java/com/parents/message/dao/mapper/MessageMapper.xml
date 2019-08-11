@@ -3,8 +3,8 @@
 <mapper namespace="com.parents.message.dao.MessageDao">
     <select id="queryMessage" resultType="com.parents.message.BigDataDTO">
         select bd.id,
-           bd.key,
-           bd.value,
-           bd.current_date from big_data bd
+        bd.key,
+        bd.value,
+        bd.current_date from big_data bd
     </select>
 </mapper>

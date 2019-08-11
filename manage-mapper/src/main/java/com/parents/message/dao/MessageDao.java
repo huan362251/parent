@@ -15,6 +15,7 @@ public interface MessageDao {
 
     /**
      * 查询消息列表
+     *
      * @param id 消息主键
      * @return
      */

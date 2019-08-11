@@ -38,7 +38,7 @@ public class Swagger2 {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.parents"))
                 .paths(PathSelectors.any())
-                .build().globalOperationParameters(pars)  ;
+                .build().globalOperationParameters(pars);
     }
 
     @SuppressWarnings("deprecation")

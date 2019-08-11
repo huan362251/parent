@@ -23,7 +23,7 @@ public class MessageServiceImpl implements MessageService {
     @Override
     public String queryMessage() {
         List<BigDataDTO> ad = messageDao.queryMessage("ad");
-        for(BigDataDTO dto : ad){
+        for (BigDataDTO dto : ad) {
             dto.toString();
         }
         return "获取查询消息";

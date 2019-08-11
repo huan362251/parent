@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class ShopController {
 
     @PostMapping("/test")
-    @ApiOperation(value="测试用接口", notes="测试用接口" ,httpMethod="POST")
-    public void test(){
+    @ApiOperation(value = "测试用接口", notes = "测试用接口", httpMethod = "POST")
+    public void test() {
         System.out.printf("测试");
     }
 }
