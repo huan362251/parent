@@ -1,5 +1,6 @@
 package com.parents.message.service.impl;
 
+import com.parents.common.ResponseDTO;
 import com.parents.message.BigDataDTO;
 
 import com.parents.message.dao.MessageDao;
@@ -20,12 +21,47 @@ public class MessageServiceImpl implements MessageService {
     @Autowired
     private MessageDao messageDao;
 
+    /**
+     * 查询消息列表
+     * @return
+     */
     @Override
-    public String queryMessage() {
-        List<BigDataDTO> ad = messageDao.queryMessage("ad");
-        for (BigDataDTO dto : ad) {
-            dto.toString();
-        }
-        return "获取查询消息";
+    public List<BigDataDTO> queryMessage() {
+        List<BigDataDTO> ad = messageDao.queryMessage();
+
+        return ad;
+    }
+
+    @Override
+    public BigDataDTO queryMessageByid(String id) {
+        return messageDao.queryMessageByid(id);
+    }
+
+    @Override
+    public ResponseDTO insertMessage(BigDataDTO dto) {
+        ResponseDTO responseDTO = new ResponseDTO();
+
+        messageDao.insertMessage(dto);
+
+        return responseDTO;
+    }
+
+    @Override
+    public ResponseDTO updateMessage(BigDataDTO dto) {
+
+        ResponseDTO responseDTO = new ResponseDTO();
+
+        messageDao.updateMessage(dto);
+
+        return responseDTO;
+    }
+
+    @Override
+    public ResponseDTO deleteMessage(String id) {
+        ResponseDTO responseDTO = new ResponseDTO();
+
+        messageDao.deleteMessage(id);
+
+        return responseDTO;
     }
 }

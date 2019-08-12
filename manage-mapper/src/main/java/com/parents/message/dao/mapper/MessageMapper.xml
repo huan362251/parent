@@ -5,6 +5,37 @@
         select bd.id,
         bd.key,
         bd.value,
-        bd.current_date from big_data bd
+        bd.current_date "date"
+         from big_data bd
     </select>
+
+    <select id="queryMessageByid" parameterType="java.lang.String" resultType="com.parents.message.BigDataDTO">
+        select bd.id,
+            bd.key,
+            bd.value,
+            bd.current_date "date"
+         from big_data bd
+            where bd.id = #{id,jdbcType=VARCHAR}
+    </select>
+
+    <insert id="insertMessage" parameterType="com.parents.message.BigDataDTO">
+        insert into big_data(id, key, value, current_date)
+            values(#{id,jdbcType=VARCHAR},
+                #{key,jdbcType=VARCHAR},
+                #{value,jdbcType=VARCHAR},
+                #{date,jdbcType=DATE})
+    </insert>
+
+    <update id="updateMessage" parameterType="com.parents.message.BigDataDTO">
+        update big_data bd
+           set bd.key = #{key,jdbcType=VARCHAR},
+           bd.value = #{value,jdbcType=VARCHAR},
+           bd.current_date = #{data,jdbcType=DATE}
+         where bd.id = #{id,jdbcType=VARCHAR}
+    </update>
+
+    <delete id="deleteMessage" parameterType="java.lang.String">
+        delete big_data bd where bd.id = #{id,jdbcType=VARCHAR}
+    </delete>
+
 </mapper>

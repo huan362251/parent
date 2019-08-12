@@ -1,0 +1,194 @@
+E:\study\java8\bin\java.exe -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:57607,suspend=y,server=n -XX:TieredStopAtLevel=1 -noverify -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -javaagent:C:\Users\wangpangzi\.IntelliJIdea2019.1\system\captureAgent\debugger-agent.jar -Dfile.encoding=UTF-8 -classpath "E:\study\java8\jre\lib\charsets.jar;E:\study\java8\jre\lib\deploy.jar;E:\study\java8\jre\lib\ext\access-bridge-64.jar;E:\study\java8\jre\lib\ext\cldrdata.jar;E:\study\java8\jre\lib\ext\dnsns.jar;E:\study\java8\jre\lib\ext\jaccess.jar;E:\study\java8\jre\lib\ext\jfxrt.jar;E:\study\java8\jre\lib\ext\localedata.jar;E:\study\java8\jre\lib\ext\nashorn.jar;E:\study\java8\jre\lib\ext\sunec.jar;E:\study\java8\jre\lib\ext\sunjce_provider.jar;E:\study\java8\jre\lib\ext\sunmscapi.jar;E:\study\java8\jre\lib\ext\sunpkcs11.jar;E:\study\java8\jre\lib\ext\zipfs.jar;E:\study\java8\jre\lib\javaws.jar;E:\study\java8\jre\lib\jce.jar;E:\study\java8\jre\lib\jfr.jar;E:\study\java8\jre\lib\jfxswt.jar;E:\study\java8\jre\lib\jsse.jar;E:\study\java8\jre\lib\management-agent.jar;E:\study\java8\jre\lib\plugin.jar;E:\study\java8\jre\lib\resources.jar;E:\study\java8\jre\lib\rt.jar;C:\Users\wangpangzi\IdeaProjects\parent\manage-controller\target\classes;C:\Users\wangpangzi\IdeaProjects\parent\manage-service\target\classes;C:\Users\wangpangzi\IdeaProjects\parent\manage-mapper\target\classes;C:\Users\wangpangzi\IdeaProjects\parent\manage-pojo\target\classes;D:\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;D:\repository\org\springframework\boot\spring-boot-starter-web\2.1.4.RELEASE\spring-boot-starter-web-2.1.4.RELEASE.jar;D:\repository\org\springframework\boot\spring-boot-starter\2.1.4.RELEASE\spring-boot-starter-2.1.4.RELEASE.jar;D:\repository\org\springframework\boot\spring-boot\2.1.4.RELEASE\spring-boot-2.1.4.RELEASE.jar;D:\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.4.RELEASE\spring-boot-autoconfigure-2.1.4.RELEASE.jar;D:\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;D:\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;D:\repository\org\springframework\boot\spring-boot-starter-json\2.1.4.RELEASE\spring-boot-starter-json-2.1.4.RELEASE.jar;D:\repository\com\fasterxml\jackson\core\jackson-databind\2.9.8\jackson-databind-2.9.8.jar;D:\repository\com\fasterxml\jackson\core\jackson-core\2.9.8\jackson-core-2.9.8.jar;D:\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.9.8\jackson-datatype-jdk8-2.9.8.jar;D:\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.8\jackson-datatype-jsr310-2.9.8.jar;D:\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.9.8\jackson-module-parameter-names-2.9.8.jar;D:\repository\org\springframework\boot\spring-boot-starter-tomcat\2.1.4.RELEASE\spring-boot-starter-tomcat-2.1.4.RELEASE.jar;D:\repository\org\apache\tomcat\embed\tomcat-embed-core\9.0.17\tomcat-embed-core-9.0.17.jar;D:\repository\org\apache\tomcat\embed\tomcat-embed-el\9.0.17\tomcat-embed-el-9.0.17.jar;D:\repository\org\apache\tomcat\embed\tomcat-embed-websocket\9.0.17\tomcat-embed-websocket-9.0.17.jar;D:\repository\org\springframework\spring-web\5.1.6.RELEASE\spring-web-5.1.6.RELEASE.jar;D:\repository\org\springframework\spring-beans\5.1.6.RELEASE\spring-beans-5.1.6.RELEASE.jar;D:\repository\org\springframework\spring-webmvc\5.1.6.RELEASE\spring-webmvc-5.1.6.RELEASE.jar;D:\repository\org\springframework\spring-context\5.1.6.RELEASE\spring-context-5.1.6.RELEASE.jar;D:\repository\org\springframework\spring-expression\5.1.6.RELEASE\spring-expression-5.1.6.RELEASE.jar;D:\repository\org\projectlombok\lombok\1.18.6\lombok-1.18.6.jar;D:\repository\org\springframework\boot\spring-boot-starter-logging\2.1.4.RELEASE\spring-boot-starter-logging-2.1.4.RELEASE.jar;D:\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;D:\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;D:\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.2\log4j-to-slf4j-2.11.2.jar;D:\repository\org\apache\logging\log4j\log4j-api\2.11.2\log4j-api-2.11.2.jar;D:\repository\org\slf4j\jul-to-slf4j\1.7.26\jul-to-slf4j-1.7.26.jar;D:\repository\org\springframework\boot\spring-boot-starter-test\2.1.4.RELEASE\spring-boot-starter-test-2.1.4.RELEASE.jar;D:\repository\org\springframework\boot\spring-boot-test\2.1.4.RELEASE\spring-boot-test-2.1.4.RELEASE.jar;D:\repository\org\springframework\boot\spring-boot-test-autoconfigure\2.1.4.RELEASE\spring-boot-test-autoconfigure-2.1.4.RELEASE.jar;D:\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;D:\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;D:\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;D:\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;D:\repository\org\assertj\assertj-core\3.11.1\assertj-core-3.11.1.jar;D:\repository\org\mockito\mockito-core\2.23.4\mockito-core-2.23.4.jar;D:\repository\net\bytebuddy\byte-buddy\1.9.12\byte-buddy-1.9.12.jar;D:\repository\net\bytebuddy\byte-buddy-agent\1.9.12\byte-buddy-agent-1.9.12.jar;D:\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;D:\repository\org\hamcrest\hamcrest-library\1.3\hamcrest-library-1.3.jar;D:\repository\org\skyscreamer\jsonassert\1.5.0\jsonassert-1.5.0.jar;D:\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;D:\repository\org\springframework\spring-core\5.1.6.RELEASE\spring-core-5.1.6.RELEASE.jar;D:\repository\org\springframework\spring-jcl\5.1.6.RELEASE\spring-jcl-5.1.6.RELEASE.jar;D:\repository\org\springframework\spring-test\5.1.6.RELEASE\spring-test-5.1.6.RELEASE.jar;D:\repository\org\xmlunit\xmlunit-core\2.6.2\xmlunit-core-2.6.2.jar;D:\repository\org\mybatis\spring\boot\mybatis-spring-boot-starter\2.0.1\mybatis-spring-boot-starter-2.0.1.jar;D:\repository\org\springframework\boot\spring-boot-starter-jdbc\2.1.4.RELEASE\spring-boot-starter-jdbc-2.1.4.RELEASE.jar;D:\repository\com\zaxxer\HikariCP\3.2.0\HikariCP-3.2.0.jar;D:\repository\org\springframework\spring-jdbc\5.1.6.RELEASE\spring-jdbc-5.1.6.RELEASE.jar;D:\repository\org\springframework\spring-tx\5.1.6.RELEASE\spring-tx-5.1.6.RELEASE.jar;D:\repository\org\mybatis\spring\boot\mybatis-spring-boot-autoconfigure\2.0.1\mybatis-spring-boot-autoconfigure-2.0.1.jar;D:\repository\org\mybatis\mybatis\3.5.1\mybatis-3.5.1.jar;D:\repository\org\mybatis\mybatis-spring\2.0.1\mybatis-spring-2.0.1.jar;D:\repository\com\alibaba\fastjson\1.2.51\fastjson-1.2.51.jar;D:\repository\com\oracle\ojdbc8\12.2.0.1\ojdbc8-12.2.0.1.jar;D:\repository\mysql\mysql-connector-java\8.0.15\mysql-connector-java-8.0.15.jar;D:\repository\com\alibaba\druid\1.1.12\druid-1.1.12.jar;D:\repository\org\hibernate\validator\hibernate-validator\6.0.13.Final\hibernate-validator-6.0.13.Final.jar;D:\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;D:\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;D:\repository\com\fasterxml\classmate\1.4.0\classmate-1.4.0.jar;D:\repository\org\springframework\boot\spring-boot-starter-aop\2.1.4.RELEASE\spring-boot-starter-aop-2.1.4.RELEASE.jar;D:\repository\org\springframework\spring-aop\5.1.6.RELEASE\spring-aop-5.1.6.RELEASE.jar;D:\repository\org\aspectj\aspectjrt\1.9.2\aspectjrt-1.9.2.jar;D:\repository\org\aspectj\aspectjweaver\1.9.2\aspectjweaver-1.9.2.jar;D:\repository\io\springfox\springfox-swagger2\2.2.2\springfox-swagger2-2.2.2.jar;D:\repository\org\mapstruct\mapstruct\1.0.0.CR1\mapstruct-1.0.0.CR1.jar;D:\repository\io\swagger\swagger-annotations\1.5.3\swagger-annotations-1.5.3.jar;D:\repository\io\swagger\swagger-models\1.5.3\swagger-models-1.5.3.jar;D:\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;D:\repository\io\springfox\springfox-spi\2.2.2\springfox-spi-2.2.2.jar;D:\repository\io\springfox\springfox-core\2.2.2\springfox-core-2.2.2.jar;D:\repository\io\springfox\springfox-schema\2.2.2\springfox-schema-2.2.2.jar;D:\repository\io\springfox\springfox-swagger-common\2.2.2\springfox-swagger-common-2.2.2.jar;D:\repository\io\springfox\springfox-spring-web\2.2.2\springfox-spring-web-2.2.2.jar;D:\repository\com\google\guava\guava\18.0\guava-18.0.jar;D:\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;D:\repository\org\springframework\plugin\spring-plugin-core\1.2.0.RELEASE\spring-plugin-core-1.2.0.RELEASE.jar;D:\repository\org\springframework\plugin\spring-plugin-metadata\1.2.0.RELEASE\spring-plugin-metadata-1.2.0.RELEASE.jar;D:\repository\org\springframework\hateoas\spring-hateoas\0.25.1.RELEASE\spring-hateoas-0.25.1.RELEASE.jar;D:\repository\io\springfox\springfox-swagger-ui\2.2.2\springfox-swagger-ui-2.2.2.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1.3\lib\idea_rt.jar" com.parents.ShopApplication
+Connected to the target VM, address: '127.0.0.1:57607', transport: 'socket'
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.4.RELEASE)
+
+2019-08-11 20:11:10.580  INFO 2700 --- [           main] com.parents.ShopApplication              : Starting ShopApplication on xiaopangzi with PID 2700 (C:\Users\wangpangzi\IdeaProjects\parent\manage-controller\target\classes started by wangpangzi in C:\Users\wangpangzi\IdeaProjects\parent)
+2019-08-11 20:11:10.584  INFO 2700 --- [           main] com.parents.ShopApplication              : No active profile set, falling back to default profiles: default
+2019-08-11 20:11:12.005  INFO 2700 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e55bdda] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 20:11:12.139  INFO 2700 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$add60b0c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-08-11 20:11:12.480  INFO 2700 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-08-11 20:11:12.505  INFO 2700 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-08-11 20:11:12.506  INFO 2700 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-08-11 20:11:12.666  INFO 2700 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-08-11 20:11:12.667  INFO 2700 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2003 ms
+Logging initialized using 'class org.apache.ibatis.logging.stdout.StdOutImpl' adapter.
+Parsed mapper file: 'file [C:\Users\wangpangzi\IdeaProjects\parent\manage-mapper\target\classes\com\parents\message\dao\mapper\MessageMapper.xml]'
+2019-08-11 20:11:13.711  INFO 2700 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-11 20:11:13.984  INFO 2700 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-08-11 20:11:14.005  INFO 2700 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2019-08-11 20:11:14.018  INFO 2700 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-08-11 20:11:14.023  INFO 2700 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryMessage was 测试消息
+2019-08-11 20:11:14.026  INFO 2700 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryMessage belongs to groups: [[ResourceGroup{groupName='测试消息', position=0, controller=com.parents.message.controller.MessageController}]]
+2019-08-11 20:11:14.028  INFO 2700 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method test was 测试
+2019-08-11 20:11:14.028  INFO 2700 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: test belongs to groups: [[ResourceGroup{groupName='测试', position=0, controller=com.parents.shop.ShopController}]]
+2019-08-11 20:11:14.036  INFO 2700 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/测试消息 Description: 测试消息 Position: 0
+2019-08-11 20:11:14.039  INFO 2700 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/测试 Description: 测试 Position: 0
+2019-08-11 20:11:14.066  INFO 2700 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.Void(true)
+2019-08-11 20:11:14.066  INFO 2700 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.Void(true)
+2019-08-11 20:11:14.072  INFO 2700 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.Void(true)
+2019-08-11 20:11:14.072  INFO 2700 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2019-08-11 20:11:14.078  INFO 2700 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /shopController/test.com.parents.shop.ShopController.test.DefaultGenericTypeNamingStrategy
+2019-08-11 20:11:14.079  INFO 2700 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /shopController/test.com.parents.shop.ShopController.test.DefaultGenericTypeNamingStrategy
+2019-08-11 20:11:14.093  INFO 2700 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method test was 测试
+2019-08-11 20:11:14.113  INFO 2700 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method test was 测试
+2019-08-11 20:11:14.127  INFO 2700 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.Void(true)
+2019-08-11 20:11:14.127  INFO 2700 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.Void(true)
+2019-08-11 20:11:14.127  INFO 2700 --- [           main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.Void(true)
+2019-08-11 20:11:14.127  INFO 2700 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2019-08-11 20:11:14.127  INFO 2700 --- [           main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /messageController/queryMessage.do.com.parents.message.controller.MessageController.queryMessage.DefaultGenericTypeNamingStrategy
+2019-08-11 20:11:14.128  INFO 2700 --- [           main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /messageController/queryMessage.do.com.parents.message.controller.MessageController.queryMessage.DefaultGenericTypeNamingStrategy
+2019-08-11 20:11:14.128  INFO 2700 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryMessage was 测试消息
+2019-08-11 20:11:14.129  INFO 2700 --- [           main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryMessage was 测试消息
+2019-08-11 20:11:14.180  INFO 2700 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-11 20:11:14.187  INFO 2700 --- [           main] com.parents.ShopApplication              : Started ShopApplication in 4.099 seconds (JVM running for 5.17)
+2019-08-11 20:11:16.876  INFO 2700 --- [nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-11 20:11:16.877  INFO 2700 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-08-11 20:11:16.889  INFO 2700 --- [nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5110552] was not registered for synchronization because synchronization is not active
+2019-08-11 20:11:16.933  INFO 2700 --- [nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-08-11 20:11:16.934  WARN 2700 --- [nio-8080-exec-2] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-08-11 20:11:17.387  INFO 2700 --- [nio-8080-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+JDBC Connection [HikariProxyConnection@1475562612 wrapping oracle.jdbc.driver.T4CConnection@5e8d3d46] will not be managed by Spring
+==>  Preparing: select bd.id, bd.key, bd.value, bd.current_date from big_data bd
+==> Parameters:
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5110552]
+2019-08-11 20:11:17.595 ERROR 2700 --- [nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException:
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00904: "BD"."CURRENT_DATE": 标识符无效
+
+### The error may exist in file [C:\Users\wangpangzi\IdeaProjects\parent\manage-mapper\target\classes\com\parents\message\dao\mapper\MessageMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: select bd.id,         bd.key,         bd.value,         bd.current_date from big_data bd
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00904: "BD"."CURRENT_DATE": 标识符无效
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00904: "BD"."CURRENT_DATE": 标识符无效
+] with root cause
+
+oracle.jdbc.OracleDatabaseException: ORA-00904: "BD"."CURRENT_DATE": 标识符无效
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:498) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:226) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:59) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:747) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:904) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1082) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3780) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.T4CPreparedStatement.executeInternal(T4CPreparedStatement.java:1343) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatement.execute(OraclePreparedStatement.java:3887) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.execute(OraclePreparedStatementWrapper.java:1079) ~[ojdbc8-12.2.0.1.jar:12.2.0.1.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.1.jar:3.5.1]
+	at com.sun.proxy.$Proxy93.execute(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.1.jar:3.5.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at com.sun.proxy.$Proxy79.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.5.1.jar:3.5.1]
+	at com.sun.proxy.$Proxy80.queryMessage(Unknown Source) ~[na:na]
+	at com.parents.message.service.impl.MessageServiceImpl.queryMessage(MessageServiceImpl.java:25) ~[classes/:na]
+	at com.parents.message.controller.MessageController.queryMessage(MessageController.java:30) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5efc35ee] was not registered for synchronization because synchronization is not active
+JDBC Connection [HikariProxyConnection@285657722 wrapping oracle.jdbc.driver.T4CConnection@5e8d3d46] will not be managed by Spring
+==>  Preparing: select bd.id, bd.key, bd.value, bd.current_date from big_data bd
+==> Parameters:
+<==    Columns: ID, KEY, VALUE, CURRENT_DATE
+<==        Row: 1, 1, 1, 2019-08-04 20:14:47.0
+<==        Row: 2, 2, 2, 2019-08-05 20:14:47.0
+<==        Row: 3, 3, 3, 2019-08-06 20:14:47.0
+<==        Row: 4, 4, 4, 2019-08-07 20:14:47.0
+<==        Row: 5, 5, 5, 2019-08-08 20:14:47.0
+<==        Row: 6, 6, 6, 2019-08-09 20:14:47.0
+<==        Row: 7, 7, 7, 2019-08-10 20:14:47.0
+<==        Row: 8, 8, 8, 2019-08-11 20:14:47.0
+<==        Row: 9, 9, 9, 2019-08-12 20:14:47.0
+<==        Row: 10, 10, 10, 2019-08-13 20:14:47.0
+<==      Total: 10
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5efc35ee]
