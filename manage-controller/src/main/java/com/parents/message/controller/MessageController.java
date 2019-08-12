@@ -70,6 +70,7 @@ public class MessageController {
     public ResponseDTO deleteMessage(@RequestBody BigDataDTO dto){
         ResponseDTO responseDTO = new ResponseDTO();
         messageService.deleteMessage(dto.getId());
+        System.out.println("abc");
         return responseDTO;
     }
 
