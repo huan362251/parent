@@ -76,6 +76,7 @@ public class MessageController {
         System.out.println("测试1.0.4分支");
         System.out.println("测试1.0.4分支");
         System.out.println("测试1.0.4分支");
+        System.out.println("测试1.0.7分支");
         return responseDTO;
     }
 
