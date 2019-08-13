@@ -72,6 +72,7 @@ public class MessageController {
         messageService.deleteMessage(dto.getId());
         System.out.println("测试1.0.3分支");
         System.out.println("测试1.0.4分支");
+        System.out.println("测试1.0.4分支");
         return responseDTO;
     }
 
